@@ -1,0 +1,50 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 0 10px rgba($color: #2f2f2f, $alpha: 0.5);
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &--menu {
+      display: flex;
+      gap: 49px;
+    }
+    &-item {
+      font-weight: 600;
+      color: $text-color;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 10px;
+      transition: all 0.2s ease;
+      position: relative;
+      cursor: pointer;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: $main-blue;
+        height: 2px;
+        width: 0%;
+        transition: all 0.2s ease;
+      }
+      &:hover::before {
+        width: 100%;
+      }
+    }
+    .btn {
+      @extend %btn;
+      background-color: $main-red;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+}

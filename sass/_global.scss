@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+li {
+  list-style: none;
+}
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+%btn {
+  padding: 20px 60px;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  color: White;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+

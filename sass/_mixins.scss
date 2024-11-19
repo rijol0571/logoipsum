@@ -1,0 +1,12 @@
+@mixin link-style($color: $main-blue, $hover-color: #ff7143) {
+    color: $color;
+    padding-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      color: $hover-color;
+    }
+  }
+  

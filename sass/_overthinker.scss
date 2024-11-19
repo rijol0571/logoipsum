@@ -1,0 +1,41 @@
+.middle {
+    padding: 10px;
+    padding-left: 100px;
+  
+    .overthinker {
+      display: flex; 
+      align-items: center;
+      gap: 250px;
+      padding: 40px 0; 
+  
+      img {
+        max-width: 450px; 
+        height: auto;
+      }
+  
+      .text__bookaholic {
+        display: flex;
+        flex-direction: column;
+        max-width: 700px; 
+        
+        h2 {
+          font-size: 60px; 
+          font-weight: bold;
+          color: #333;
+        }
+  
+        p {
+          font-size: 16px;
+          line-height: 1.8;
+          color: $text-color; 
+          font-weight: 500;
+          padding-top: 20px;
+        }
+  
+        a {
+          @include link-style();
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,17 @@
+.logoes {
+    padding: 20px;
+    .logo__line {
+      display: flex; 
+      justify-content:space-around;
+      img {
+        max-width: 100px; 
+        height: auto; 
+        transition: transform 0.3s ease; 
+        
+        &:hover {
+          transform: scale(1.1); 
+        }
+      }
+    }
+  }
+  
